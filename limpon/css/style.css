@@ -592,6 +592,9 @@ button, input {
     background-position: left;
 }
 /*7 блок*/
+.title-hide{
+    display: none;
+}
 .page-app-1 {
     padding: 104px 0 97px 0;
 }
@@ -1439,6 +1442,12 @@ a.ff{
         margin: 0;
         text-align: center;
     }
+    .title-hide{
+        display: block;
+    }
+    .title-show{
+        display: none;
+    }
     a.video-app {
         top: -24px;
         right: 0;
@@ -1538,7 +1547,7 @@ a.ff{
     margin: 10px auto 25px auto;
     }
     .page-screen {
-        padding: 50px 0px 50px 0px;
+        padding: 50px 0px 100px 0px;
     }
     .flex-analytics {
         justify-content: space-evenly;
@@ -1566,7 +1575,7 @@ a.ff{
     }
     .flex-analytics img, .flex-app img{
         margin: 0;
-        width: 45%;
+        width: 90vw;
     }
     .flex-app {
         justify-content: space-evenly;
@@ -1682,7 +1691,7 @@ a.ff{
     .active.box-price-item.item, .box-price-item.item {
         width: 70%;
     }
-	.list-company{
+    .list-company{
         flex-direction: column;
     }
     
