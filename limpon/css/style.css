@@ -215,7 +215,8 @@ h1 {
     padding: 25px 15px 48px 15px;
     margin: 0 auto;
     border-radius: 15px;
-    box-shadow: 0 0px 26px #9c9c9c54;
+    -webkit-box-shadow: 0 0px 26px #9c9c9c54;
+            box-shadow: 0 0px 26px #9c9c9c54;
 }
 .nav-modal{
     font-size: 12px;
@@ -241,6 +242,7 @@ ul.nav-modal>li:last-child {
     color: #7b8eae;
     font-size: 35px;
     opacity: 0.2;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .btn-close:hover{
@@ -761,7 +763,8 @@ a.video-app {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 65px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0;
 }
 
@@ -1410,10 +1413,13 @@ a.ff{
         display: none;
     }
     .page-software-flex>div {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
     .page-software-flex {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 @media (max-width:1100px){
@@ -1428,8 +1434,12 @@ a.ff{
     text-align: center;
     }
     .btn-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .box-header{
         margin-bottom: 100px;
@@ -1553,8 +1563,13 @@ a.ff{
         padding: 50px 0px 100px 0px;
     }
     .flex-analytics {
-        justify-content: space-evenly;
-        flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .flex-analytics .settings-icon, .flex-app .settings-icon{
         display: none;
@@ -1581,8 +1596,13 @@ a.ff{
         width: 90vw;
     }
     .flex-app {
-        justify-content: space-evenly;
-        flex-direction: column-reverse;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .page-clients {
         background-color: rgba(35,120,205,1);
@@ -1598,8 +1618,13 @@ a.ff{
     }
     
     .box-clients {
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-width: 350px;
         margin: 0 auto;
     }
@@ -1635,7 +1660,10 @@ a.ff{
     }
     .flex-form {
         padding: 0 0 40px 0;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .contact-form {
         max-width: 85vw;
@@ -1678,6 +1706,10 @@ a.ff{
         text-align: center;
         margin: 0 40px;
     }
+    .flex-analytics img, .flex-app img {
+        margin: 0;
+        width: 60vw;
+    }
 }
 @media (max-width:800px){
 .box-team-item.item {
@@ -1688,7 +1720,8 @@ a.ff{
 }
 @media (max-width:700px){
     .list-stat>li{
-        flex-basis: 34%;
+        -ms-flex-preferred-size: 34%;
+            flex-basis: 34%;
         margin-bottom: 30px;
     }
     .modal{
@@ -1701,7 +1734,10 @@ a.ff{
         width: 70%;
     }
     .list-company{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .box-team-item.item {
         max-width: 50%;
@@ -1724,7 +1760,10 @@ a.ff{
         margin-bottom: 15px;
     }
     .btn-group{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-width: 300px;
         text-align: center;
         margin: 0 auto;
@@ -1747,9 +1786,16 @@ a.ff{
     }
     
     .wrap.footer-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         margin: 0 auto;
         text-align: center;
     }
