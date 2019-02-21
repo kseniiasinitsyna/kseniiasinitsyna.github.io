@@ -438,6 +438,9 @@ p.grid-name {
     margin: 3px 0 0 6px;
 }
 /*блок с роботом -4*/
+.btn-hide{
+    display: none;
+}
 
 .box-subscribe-child h2 span{
 	display: block;
@@ -1497,12 +1500,14 @@ a.ff{
     } 
     .box-subscribe-child h2{
         margin: 27px auto;
+        line-height: 1;
     }
     .box-subscribe-child h2 span {
         padding: 0px 0px 16px 0px;
     }
     .box-subscribe-child p{
         margin: 0 auto;
+        width: 85vw;
     }
     .box-subscribe img {
         margin: 0 auto;
@@ -1631,6 +1636,18 @@ a.ff{
     .contact-form .btn-primary::before {
         left: 10%;
     }
+    .form input {
+        max-width: 70vw;
+        font-size: 13px;
+        padding: 25px 95px 25px 21px;
+        margin: 0 auto;
+    }
+    .form .btn-primary {
+        position: absolute;
+        top: 9px;
+        right: 11%;
+        padding: 17px 47px;
+    }
 }
 @media(max-width:930px){
     .obj-circle{
@@ -1715,6 +1732,11 @@ a.ff{
     div.social {
         margin: 0 auto 15px auto;
     }
+    .grid {
+        grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
 }
 @media (max-width:500px)  {
     
@@ -1737,6 +1759,13 @@ a.ff{
         padding: 20px 35px 20px 45px;
         margin: 0 auto;
     }
+    .btn-show{
+        display: none;
+    }
+    .btn-hide{
+        display: block;
+    }
+
 }
 
 @media(max-width:400px){
