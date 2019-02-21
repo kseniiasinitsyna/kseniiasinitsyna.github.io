@@ -1682,6 +1682,9 @@ a.ff{
     .active.box-price-item.item, .box-price-item.item {
         width: 70%;
     }
+	.list-company{
+        flex-direction: column;
+    }
     
 }
 @media (max-width:600px){
