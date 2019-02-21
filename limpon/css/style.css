@@ -441,6 +441,9 @@ p.grid-name {
 .btn-hide{
     display: none;
 }
+.form input.form-hide {
+    display: none;
+}
 
 .box-subscribe-child h2 span{
 	display: block;
@@ -1620,9 +1623,9 @@ a.ff{
         display: none;
     }
     .box-team-item.item {
-        max-width: 50%;
+        max-width: 35%;
         margin: 15px auto;
-        padding: 40px;
+        padding: 25px;
     }
     .page-form {
         padding: 75px 15px 0 15px;
@@ -1654,7 +1657,7 @@ a.ff{
     .form .btn-primary {
         position: absolute;
         top: 9px;
-        right: 11%;
+        right: 13%;
         padding: 17px 47px;
     }
 }
@@ -1675,7 +1678,13 @@ a.ff{
         text-align: center;
         margin: 0 40px;
     }
-    
+}
+@media (max-width:800px){
+.box-team-item.item {
+    max-width: 45%;
+    margin: 15px auto;
+    padding: 25px;
+    }
 }
 @media (max-width:700px){
     .list-stat>li{
@@ -1693,6 +1702,11 @@ a.ff{
     }
     .list-company{
         flex-direction: column;
+    }
+    .box-team-item.item {
+        max-width: 50%;
+        margin: 15px auto;
+        padding: 25px;
     }
     
 }
@@ -1731,9 +1745,7 @@ a.ff{
     .box-price-item {
         padding: 2px 0 75px 0;
     }
-    .box-team-item.item {
-        max-width: 70%;
-    }
+    
     .wrap.footer-items {
         display: flex;
         flex-direction: column;
@@ -1748,6 +1760,17 @@ a.ff{
         grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h";
         grid-template-rows: auto;
         grid-template-columns: auto;
+    }
+    .box-team-item.item {
+        max-width: 65%;
+        margin: 15px auto;
+        padding: 25px;
+    }
+    .form input.form-show {
+        display: none;
+    }
+    .form input.form-hide {
+        display: block;
     }
 }
 @media (max-width:500px)  {
@@ -1779,7 +1802,19 @@ a.ff{
     }
 
 }
-
+@media(max-width:450px){
+    .box-team-item.item {
+        max-width: 90%;
+        margin: 17px auto;
+        padding: 13px;
+    }
+    .form input {
+        max-width: 90vw;
+    }
+    .form .btn-primary {
+        right: 3%;
+    }
+}
 @media(max-width:400px){
     .btn-info {
         padding: 20px 40px;
