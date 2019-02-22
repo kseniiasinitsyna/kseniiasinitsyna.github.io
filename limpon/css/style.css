@@ -1642,6 +1642,7 @@ a.ff{
         align-self: center;
         display: block;
         position: inherit;
+        padding-bottom: 10px;
     }
     .box-clients-item {
         margin: 15px auto;
