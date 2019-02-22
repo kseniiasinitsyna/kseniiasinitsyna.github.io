@@ -1406,6 +1406,10 @@ a.ff{
     }
 }
 @media (max-width:1300px){
+    .page-subscribe {
+        height: auto;
+        display: block;
+    }
     .page-software {
         padding: 60px 0;
         background-image: none;
