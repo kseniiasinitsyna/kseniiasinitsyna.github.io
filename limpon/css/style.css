@@ -1570,10 +1570,6 @@ a.ff{
     }
     .page-screen {
         padding: 50px 0px 100px 0px;
-	height: auto;
-    }
-    .screen {
-    margin-bottom: 0px;
     }
     .flex-analytics {
         -webkit-box-pack: space-evenly;
@@ -1621,7 +1617,7 @@ a.ff{
         background-color: rgba(35,120,205,1);
         margin: 0 auto;
         background-size: cover;
-    	height: auto;
+        height: auto;
     }
     .page-clients h2 span, .page-clients h2 {
         text-align: center;
@@ -1705,6 +1701,12 @@ a.ff{
         top: 9px;
         right: 13%;
         padding: 17px 47px;
+    }
+    .page-plan {
+        padding: 80px 0 123px 0;
+    }
+    .page-plan .title-40 {
+        margin-top: 0;
     }
 }
 @media(max-width:930px){
