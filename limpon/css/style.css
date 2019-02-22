@@ -1636,8 +1636,9 @@ a.ff{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        max-width: 350px;
-        margin: 0 auto;
+        margin: 25px auto 0 auto;
+        margin-bottom: 57px;
+        justify-self: center;
     }
     .box-clients-item {
         margin: 15px auto;
