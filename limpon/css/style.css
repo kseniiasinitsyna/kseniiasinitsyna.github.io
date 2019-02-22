@@ -1617,6 +1617,7 @@ a.ff{
         background-color: rgba(35,120,205,1);
         margin: 0 auto;
         background-size: cover;
+    	height: auto;
     }
     .page-clients h2 span, .page-clients h2 {
         text-align: center;
