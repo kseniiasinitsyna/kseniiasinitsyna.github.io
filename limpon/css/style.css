@@ -1516,7 +1516,7 @@ a.ff{
         margin-bottom: 10px;
     }
     .page-subscribe {
-    height: 605px;
+        height: auto;
     }
     .box-subscribe{
         -webkit-box-orient: vertical;
@@ -1541,7 +1541,7 @@ a.ff{
         width: 85vw;
     }
     .box-subscribe img {
-        margin: 0 auto;
+        margin: 15px auto 0 auto;
         max-width: 250px;
     }
     .page-software-list {
