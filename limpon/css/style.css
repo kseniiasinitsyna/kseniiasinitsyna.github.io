@@ -1410,6 +1410,9 @@ a.ff{
         height: auto;
         display: block;
     }
+    .form input {
+        display: block;
+    }
     .page-software {
         padding: 60px 0;
         background-image: none;
