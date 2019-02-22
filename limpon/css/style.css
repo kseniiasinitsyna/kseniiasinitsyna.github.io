@@ -1409,6 +1409,11 @@ a.ff{
     .page-software {
         padding: 60px 0;
         background-image: none;
+        display: block;
+    }
+    .page-software-flex .settings-icon{
+        margin: 0 auto;
+        display: block;
     }
     .page-software-list{
     height: 298px;
@@ -1566,6 +1571,7 @@ a.ff{
     }
     .page-software-flex .settings-icon{
         margin: 0 auto;
+        display: block;
     }
     .page-software .title-h2{
     text-align: center;
