@@ -1572,6 +1572,9 @@ a.ff{
         padding: 50px 0px 100px 0px;
 	height: auto;
     }
+    .screen {
+    margin-bottom: 0px;
+    }
     .flex-analytics {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
