@@ -1618,6 +1618,7 @@ a.ff{
         margin: 0 auto;
         background-size: cover;
         height: auto;
+        display: block;
     }
     .page-clients h2 span, .page-clients h2 {
         text-align: center;
@@ -1639,6 +1640,8 @@ a.ff{
         margin: 0px auto 0 auto;
         justify-self: center;
         align-self: center;
+        display: block;
+        position: inherit;
     }
     .box-clients-item {
         margin: 15px auto;
