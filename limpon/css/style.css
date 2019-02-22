@@ -1570,6 +1570,7 @@ a.ff{
     }
     .page-screen {
         padding: 50px 0px 100px 0px;
+	height: auto;
     }
     .flex-analytics {
         -webkit-box-pack: space-evenly;
