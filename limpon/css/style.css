@@ -1528,6 +1528,7 @@ a.ff{
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         text-align: center;
+        display: block;
     } 
     .box-subscribe-child h2{
         margin: 27px auto;
@@ -1543,6 +1544,7 @@ a.ff{
     .box-subscribe img {
         margin: 15px auto 0 auto;
         max-width: 250px;
+        display: block;
     }
     .page-software-list {
         height: 270px;
