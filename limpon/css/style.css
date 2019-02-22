@@ -1529,6 +1529,7 @@ a.ff{
             flex-basis: 100%;
         text-align: center;
         display: block;
+        position: inherit;
     } 
     .box-subscribe-child h2{
         margin: 27px auto;
