@@ -1636,9 +1636,9 @@ a.ff{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin: 25px auto 0 auto;
-        margin-bottom: 57px;
+        margin: 0px auto 0 auto;
         justify-self: center;
+        align-self: center;
     }
     .box-clients-item {
         margin: 15px auto;
