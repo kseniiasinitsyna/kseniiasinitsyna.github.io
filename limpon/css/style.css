@@ -1499,6 +1499,7 @@ a.ff{
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
         margin-bottom: 50px;
+        flex: 1 1 auto;
     }
     .list-company-item span{
         margin: 0 auto;
@@ -1540,7 +1541,7 @@ a.ff{
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         text-align: center;
-        display: block;
+        flex: 1 1 auto;
         position: inherit;
     } 
     .box-subscribe-child h2{
@@ -1557,7 +1558,7 @@ a.ff{
     .box-subscribe img {
         margin: 15px auto 0 auto;
         max-width: 250px;
-        display: block;
+        flex: 1 1 auto;
     }
     .page-software-list {
         height: 270px;
@@ -1619,6 +1620,9 @@ a.ff{
     .flex-analytics img, .flex-app img{
         margin: 0;
         width: 90vw;
+    }
+    .flex-analytics>div{
+        flex: 1 1 auto;
     }
     .flex-app {
         -webkit-box-pack: space-evenly;
@@ -1700,6 +1704,10 @@ a.ff{
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+    .flex-form > div {
+        flex: 1 1 auto;
+    }
+    
     .contact-form {
         max-width: 85vw;
         margin: 0 auto;
@@ -1720,7 +1728,7 @@ a.ff{
     .form .btn-primary {
         position: absolute;
         top: 9px;
-        right: 13%;
+        right: 11%;
         padding: 17px 47px;
     }
     .page-plan {
