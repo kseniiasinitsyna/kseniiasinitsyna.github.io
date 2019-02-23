@@ -1073,12 +1073,13 @@ h4#toTop:hover {
         max-width: 1200px;
     }
     div.social {
-        margin: 30px 15px 15px 0;
+    margin: 45px 15px 0px 0;
+    padding: 0;
     }
     div.nav {
-        margin: 30px 0 0px 15px;
+        margin: 40px 0 0px 15px;
         -ms-flex-preferred-size: 41%;
-            flex-basis: 41%;
+        flex-basis: 41%;
     }
     .articles-item.articles-item-1, .articles-item.articles-item-2, .articles-item.articles-item-3 {
         width: 390px;
