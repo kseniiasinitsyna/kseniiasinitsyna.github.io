@@ -1144,7 +1144,7 @@ h4#toTop:hover {
                 flex-direction: column-reverse;
     }
     .dropdown:hover .dropdown-content {
-        display: -webkit-inline-box;
+        display: -webkit-box;
         position: absolute;
     }
     .dropdown-content a {
