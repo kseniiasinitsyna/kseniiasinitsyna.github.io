@@ -1806,10 +1806,12 @@ h4#toTop:hover {
         width: 300px;
         display: flex;
         flex-direction: column;
+        flex: 1 1 auto;
     }
     .nav button, .contact, .dropdown-content a, .dropdown {
         padding: 0;
         margin: 0 auto;
+        flex: 1 1 auto;
     }
     .dropdown:hover .dropdown-content {
         display: block;
@@ -1817,6 +1819,7 @@ h4#toTop:hover {
         margin-left: 65px;
         width: 120px;
         top: 0;
+        flex: 1 1 auto;
     }
     img.down, img.down-hover,.dropdown:hover .down-hover {
         display: none;
