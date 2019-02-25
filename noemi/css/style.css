@@ -1797,6 +1797,7 @@ h4#toTop:hover {
     .wrap {
         max-width: 305px;
         margin: 0 auto;
+        flex: 1 1 auto;
     }
     .mainline {
         margin-bottom: 15px;
@@ -1847,9 +1848,11 @@ h4#toTop:hover {
     }
     p.article-main {
         width: 250px;
+        flex: 1 1 auto;
     }
     .articles-item .article-main a {
         font-size: 15px;
+        flex: 1 1 auto;
     }
     .block-item {
         display: -webkit-box;
@@ -1883,6 +1886,7 @@ h4#toTop:hover {
     .img-1{
         height: unset;
         top: -10px;
+        flex: 1 1 auto;
     }
     .img-1 img {
         width: 200px;
