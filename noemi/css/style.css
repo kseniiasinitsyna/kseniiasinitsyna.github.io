@@ -1830,6 +1830,7 @@ h4#toTop:hover {
         flex: 1 1 auto;
     }
     .block-item {
+        max-width:270px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
