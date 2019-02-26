@@ -1795,6 +1795,7 @@ h4#toTop:hover {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
         font-size: 9px;
+        line-height: 1.6;
     }
     .dropdown-content a{
         font-size: 9px;
