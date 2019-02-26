@@ -1790,7 +1790,8 @@ h4#toTop:hover {
         font-weight: 600;
         -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
-        flex: 1 1 auto; 
+        flex: 1 1 auto;
+        font-size: 9px;
     }
     .dropdown:hover .dropdown-content {
         display: block;
