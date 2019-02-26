@@ -1,5 +1,8 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 .wrap {
     margin: 0 auto;
