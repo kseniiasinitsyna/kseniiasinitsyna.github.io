@@ -1267,7 +1267,9 @@ h4#toTop:hover {
 .banner img:hover {
     opacity: 0.75;
 }
-
+.footer a {
+    color: black;
+}
 /*MEDIA*/
 @media(max-width:1600px){
     .wrap {
