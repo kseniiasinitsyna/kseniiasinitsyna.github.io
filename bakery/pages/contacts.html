@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Credits</title>
+    <title>Контакты</title>
 </head>
 <body>
     <div class="header wrap">
@@ -20,11 +20,31 @@
             <a href="contacts.html" class="header_nav_contacts">Контакты</a>
         </div>
     </div>
-    <div class="wrap">
-    <p>КОНТАКТЫ</p>
-    <p class="address">Санкт-Петербург, Невский проспект</p>
-    <a class="telephone" href="tel:+1111111111">+1 111 111111</a>
-    <a class="mail" href="mailto:mail@mail.ru?subject=Вопрос по пекарне">mail@mail.ru</a>
+    <div class="wrap-2">
+        <div class="map">
+            <h2 class="main_title">Мы на карте</h2>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=mymaps%3A2yGfQvodt6iY7mqFx0n60d4C7m7H2pH4&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>        </div>
+        <div class="contact">
+            <div class="contact-form">
+                <h2 class="main_title">Свяжитесь с нами</h2>
+                <form action="mail.php" method="POST">
+                    <p>Имя</p> <input type="text" name="name"/>
+                    <p>E-mail</p> <input type="text" name="email"/>
+                    <p>Тема</p> <input type="text" name="subject "/>
+                    <p>Сообщение</p><textarea name="message" rows="6" cols="25"></textarea><br />
+                    <input type="submit" value="Отправить"/>
+                </form> 
+            </div>
+            <div class="contact-info">
+                <h2 class="main_title">Контактная информация</h2>
+                <p><span>Съешь же ещё этих мягких французских булок да выпей чаю. </span>Съешь же ещё этих мягких французских булок да выпей чаю. Съешь же ещё этих мягких французских булок да выпей чаю. Съешь же ещё этих мягких французских булок да выпей чаю. Съешь же ещё этих мягких французских булок да выпей чаю. Съешь же ещё этих мягких французских булок да выпей чаю. Съешь же ещё этих мягких французских булок да выпей чаю. Съешь же ещё этих мягких французских булок да выпей чаю. </p>
+                <p class="address">SweetBakery<br>Санкт-Петербург, Невский проспект</p>
+                <p class="telephone">Телефон: <a href="tel:+1111111111">+1 111 111111</a></p> 
+                <p class="telephone">Факс: +1 111 111 11 11</p>
+                <p class="mail">Почта: <a href="mailto:mail@mail.ru?subject=Вопрос по пекарне">mail@mail.ru</a></p> 
+            </div>
+            
+        </div>
     </div>
     <div class="footer">
             <div class="wrap-2 footer-wrap">
@@ -54,5 +74,7 @@
             </div>
             <div class="credits"><a href="credits.html">Credits</a></div>
     </div>
+    <script src="../owlcarousel/jquery.min.js"></script>
+    <script src="../owlcarousel/script.js"></script> 
 </body>
 </html>
