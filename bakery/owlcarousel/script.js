@@ -6,6 +6,7 @@ $(document).ready(function(){
                 nav: true,
                 navText : ['',''],
                 smartSpeed: 800,
+                autoplay: true,
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn'             
             });
