@@ -234,13 +234,11 @@ p.services_item_text {
     height: 400px;
     margin: 0 auto;
 }
-.wrap-2{
-    display: -webkit-box;
-    display: -ms-flexbox;
+.feedback-wrap {
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
+}
+.wrap-2{
     margin: 0 auto;
     max-width: 900px
 }
@@ -525,7 +523,7 @@ p.follow {
     left: 860px;
     top: -144px;
 }
-/*page-credits*/
+/*PAGE CREDITS*/
 .credit{
     color:#333;
     font-weight: 400;
@@ -543,12 +541,8 @@ p.credit a:hover{
 .credits-ref {
     text-align: center;
     border: 4px dashed #b5e1e1;
-    /* background-image: url(../img/credits.jpg); 
-    background-size: 100%;
-    background-position: 0px -180px;
-    height: -webkit-fill-available;*/
     padding: 30px 100px;
-    margin: 0 auto;
+    margin: 30px auto 125px auto;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -558,7 +552,7 @@ p.credit a:hover{
     text-transform: uppercase;
 }
 
-/*page ABOUT US*/
+/*PAGE ABOUT US*/
 .about-us_main {
     display: flex;
     justify-content: space-between;
@@ -576,7 +570,7 @@ p.credit a:hover{
     flex-basis: 150%;
     margin: 0 15px 0 0;
 }
-h2.about-us_title {
+h2.main_title {
     font-weight: 400;
     font-size: 50px;
     margin: 45px 0 20px 0;
@@ -666,6 +660,53 @@ a.staff_name {
     margin: 0 0 5px 0;
 }
 a.staff_name:hover{
+    color: #6cc;
+}
+
+/*PAGE CONTACTS*/
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 120px 0;
+}
+.contact-form {
+    margin: 0px 25px 0 0;
+}
+form p {
+    margin: 0;
+}
+input[type="text"], textarea {
+    width: 420px;
+    height: 30px;
+    border: 1px dashed #c7c7c7;
+}
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+.contact-info p {
+    font-size: 16px;
+    color: #999;
+}
+.contact-info span {
+    display: block;
+    font-weight: 600;
+}
+.contact-info .address {
+    background-image: none;
+    padding: 0;
+    margin: 30px 0 30px 0;
+}
+p.telephone, p.address, p.mail{
+    margin: 0 0 5px 0;
+}
+p.telephone a, p.mail a {
+    color: #999;
+    text-decoration: none;
+}
+p.telephone a:hover, p.mail a:hover {
     color: #6cc;
 }
 
