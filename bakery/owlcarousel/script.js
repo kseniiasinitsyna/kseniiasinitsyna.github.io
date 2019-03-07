@@ -7,6 +7,7 @@ $(document).ready(function(){
                 navText : ['',''],
                 smartSpeed: 800,
                 autoplay: true,
+                autoplayHoverPause: true,
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn'             
             });
