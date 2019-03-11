@@ -7,7 +7,7 @@ body{
     cursor: default;
     margin: 0 auto;
 }
-a {
+a, button {
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
     cursor: pointer;
@@ -15,8 +15,12 @@ a {
 a:focus, button:focus{
     outline: none;
 }
-button{
-    cursor: pointer;
+a:hover,input[type="submit"]:hover {
+    color: #6cc;
+}
+input:focus, textarea:focus{
+    outline-width: 1px;
+    outline-color: #6cc;
 }
 .wrap{
     width: 1200px;
@@ -77,7 +81,7 @@ button{
     vertical-align: middle;
     padding: 0;
     color: #999;
-    margin: 0 10px 0 0px;
+    margin: 0 10px 0 10px;
 }
 
 
@@ -576,8 +580,8 @@ p.credit a:hover{
 }
 h2.main_title {
     font-weight: 400;
-    font-size: 50px;
-    margin: 45px 0 20px 0;
+    font-size: 45px;
+    margin: 0 0 20px 0;
 }
 .about-us-1block {
     overflow: hidden;
@@ -668,6 +672,22 @@ a.staff_name:hover{
 }
 
 /*PAGE CONTACTS*/
+.map { 
+    
+}
+.map-container{
+    height: 350px;
+    position: relative;
+}
+.loading {
+	position: absolute;
+	display: block;
+	background:transparent url('../img/loading.gif') center center no-repeat;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+}
+
 .contact {
     display: flex;
     justify-content: space-between;
@@ -677,18 +697,39 @@ a.staff_name:hover{
     margin: 0px 25px 0 0;
 }
 form p {
-    margin: 0;
+    margin: 25px 0 3px 0;
+    font-size: 18px;
 }
-input[type="text"], textarea {
+form p span {
+    color: #ff5050;
+}
+.input-element {
     width: 420px;
-    height: 30px;
-    border: 1px dashed #c7c7c7;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px #f7f7f7;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 18px
 }
 textarea {
     resize: none;
     height: 100px;
 }
-
+input[type="submit"] {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    background-image: url(../img/next-cian.svg);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 12px;
+}
+input:invalid {
+    background: #fff4f4; /* Красный цвет фона */
+}
 
 .contact-info p {
     font-size: 16px;
@@ -707,10 +748,10 @@ p.telephone, p.address, p.mail{
     margin: 0 0 5px 0;
 }
 p.telephone a, p.mail a {
-    color: #999;
+    color: #6cc;
     text-decoration: none;
 }
 p.telephone a:hover, p.mail a:hover {
-    color: #6cc;
+    text-decoration: underline;
 }
 

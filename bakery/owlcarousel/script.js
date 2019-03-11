@@ -7,7 +7,6 @@ $(document).ready(function(){
                 navText : ['',''],
                 smartSpeed: 800,
                 autoplay: true,
-                autoplayHoverPause: true,
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn'             
             });
@@ -26,4 +25,12 @@ $(document).ready(function(){
         }, 800);
         return false;
     });
+});
+$(function() {
+	if(navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i)) {
+		$('.loading').hide();
+	}
+	$('.image').load(function() {
+		$(this).parent().find(".loading").hide();
+	});
 });
