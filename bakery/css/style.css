@@ -223,7 +223,11 @@ p.services_item_text {
     display: block;
     color: inherit;
     text-decoration: none;
-    text-align: center;
+    background-image: url(../img/next-cian.svg);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 12px;
 }
 .services_item_link:hover {
     color: #6cc;
