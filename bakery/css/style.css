@@ -353,7 +353,7 @@ p.services_item_text {
     font-size: 16px;
     max-width: 260px;
 }
-.stat_item a {
+.stat_item_link {
     color: #333;
     font-size: 18px;
     text-decoration: none;
@@ -363,7 +363,7 @@ p.services_item_text {
     background-position-y: center;
     padding-left: 12px;
 }
-.stat_item a:hover {
+.stat_item_link:hover {
     text-decoration: none;
     color:#66CCCC;
 }
