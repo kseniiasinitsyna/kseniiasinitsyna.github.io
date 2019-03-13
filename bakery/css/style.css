@@ -755,3 +755,16 @@ p.telephone a:hover, p.mail a:hover {
     text-decoration: underline;
 }
 
+/*PAGE MENU*/
+.menu_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_item {
+    max-width: 360px;
+}
+.menu_item_img img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}

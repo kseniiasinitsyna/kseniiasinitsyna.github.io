@@ -35,3 +35,8 @@ $(function() {
 		$(this).parent().find(".loading").hide();
 	});
 });
+
+$('.all_menu_link').click(function(){ $('.menu_item').show('slow'); });
+$('.cake_link').click(function(){ $('.cake').show('slow'); $('.biscuit').hide('slow'); $('.cookie').hide('slow'); });
+$('.biscuit_link').click(function(){ $('.biscuit').show('slow'); $('.cake').hide('slow'); $('.cookie').hide('slow'); });
+$('.cookie_link').click(function(){ $('.cookie').show('slow'); $('.biscuit').hide('slow'); $('.cake').hide('slow'); });
