@@ -1,3 +1,4 @@
+/*carousel */
 $(document).ready(function(){
             $(".owl-carousel").owlCarousel({
                 items:1,
@@ -12,6 +13,7 @@ $(document).ready(function(){
                 animateIn: 'fadeIn'             
             });
         });
+/*to top*/
 $(document).ready(function(){   
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
@@ -27,6 +29,7 @@ $(document).ready(function(){
         return false;
     });
 });
+/*map loading*/
 $(function() {
 	if(navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i)) {
 		$('.loading').hide();
@@ -35,8 +38,27 @@ $(function() {
 		$(this).parent().find(".loading").hide();
 	});
 });
-
-$('.all_menu_link').click(function(){ $('.menu_item').show('slow'); });
-$('.cake_link').click(function(){ $('.cake').show('slow'); $('.biscuit').hide('slow'); $('.cookie').hide('slow'); });
-$('.biscuit_link').click(function(){ $('.biscuit').show('slow'); $('.cake').hide('slow'); $('.cookie').hide('slow'); });
-$('.cookie_link').click(function(){ $('.cookie').show('slow'); $('.biscuit').hide('slow'); $('.cake').hide('slow'); });
+/*menu show and hide*/
+// init Isotope
+var $grid = $('.grid').isotope({
+    itemSelector: '.menu_item',
+    layoutMode: 'fitRows'
+  });
+  // filter functions
+  var filterFns = 
+  // bind filter button click
+  $('.filters-button-group').on( 'click', 'button', function() {
+    var filterValue = $( this ).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $grid.isotope({ filter: filterValue });
+  });
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
+  

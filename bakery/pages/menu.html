@@ -23,50 +23,62 @@
     <div class="wrap-2">
         <div class="menu">
             <h2 class="main_title">МЕНЮ</h2>
-            <div class="menu_nav">
-                <button class="menu_nav_btn all_menu_link">Все</button>
-                <button class="menu_nav_btn cake_link">Торты</button>
-                <button class="menu_nav_btn biscuit_link">Пирожные</button>
-                <button class="menu_nav_btn cookie_link">Печенье</button>
+            <div class="menu_nav button-group filters-button-group">
+                <button class="button is-checked all_menu_link" data-filter="*">Все</button>
+                <button class="button cake_link" data-filter=".cake">Торты</button>
+                <button class="button biscuit_link" data-filter=".biscuit">Пирожные</button>
+                <button class="button cookie_link" data-filter=".cookie">Печенье</button>
             </div>
-            <div class="menu_list">
-                <div class="menu_item cake">
+            <div class="menu_list grid">
+                <div class="menu_item cake" data-category="cake">
                         <div class="menu_item_img"><img src="../img/block1-1.jpg" alt=""></div>
                         <h3 class="menu_item_title">Тортик</h2>
                         <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
                         <a class="services_item_link" href="">Подробнее</a>
                 </div>
-                <div class="menu_item cake">
+                <div class="menu_item cookie" data-category="cookie">
+                    <div class="menu_item_img"><img src="../img/stat-2.jpg" alt=""></div>
+                    <h3 class="menu_item_title">Печенье</h2>
+                    <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
+                    <a class="services_item_link" href="">Подробнее</a>
+                </div>
+                <div class="menu_item cake" data-category="cake">
                         <div class="menu_item_img"><img src="../img/block1-2.jpg" alt=""></div>
                         <h3 class="menu_item_title">Тортик</h2>
                         <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
                         <a class="services_item_link" href="">Подробнее</a>
                 </div>
-                <div class="menu_item cake">
+                <div class="menu_item cake" data-category="cake">
                         <div class="menu_item_img"><img src="../img/block1-3.jpg" alt=""></div>
                         <h3 class="menu_item_title">Тортик</h2>
                         <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
                         <a class="services_item_link" href="">Подробнее</a>
                 </div>
-                <div class="menu_item biscuit">
+                <div class="menu_item biscuit" data-category="biscuit">
                         <div class="menu_item_img"><img src="../img/credits.jpg" alt=""></div>
                         <h3 class="menu_item_title">Пирожное</h2>
                         <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
                         <a class="services_item_link" href="">Подробнее</a>
                 </div>
-                <div class="menu_item biscuit">
+                <div class="menu_item biscuit" data-category="biscuit">
                         <div class="menu_item_img"><img src="../img/stat-1.jpg" alt=""></div>
                         <h3 class="menu_item_title">Пирожное</h2>
                         <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
                         <a class="services_item_link" href="">Подробнее</a>
                 </div>
-                <div class="menu_item cookie">
+                <div class="menu_item cake" data-category="cake">
+                    <div class="menu_item_img"><img src="../img/block1-2.jpg" alt=""></div>
+                    <h3 class="menu_item_title">Тортик</h2>
+                    <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
+                    <a class="services_item_link" href="">Подробнее</a>
+                </div>
+                <div class="menu_item cookie" data-category="cookie">
                         <div class="menu_item_img"><img src="../img/stat-2.jpg" alt=""></div>
                         <h3 class="menu_item_title">Печенье</h2>
                         <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
                         <a class="services_item_link" href="">Подробнее</a>
                 </div>
-                <div class="menu_item cookie">
+                <div class="menu_item cookie" data-category="cookie">
                         <div class="menu_item_img"><img src="../img/stat-3.jpg" alt=""></div>
                         <h3 class="menu_item_title">Печенье</h2>
                         <p class="menu_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eveniet atque nemo ipsam, assumenda amet sit, magni cum incidunt ratione perspiciatis quae numquam modi, consequatur ullam eius. Eos, dignissimos.</p>
@@ -104,6 +116,7 @@
             <div class="credits"><a href="credits.html">Credits</a></div>
     </div>
     <script src="../owlcarousel/jquery.min.js"></script>
+    <script src="../owlcarousel/isotope.pkgd.min.js"></script> 
     <script src="../owlcarousel/script.js"></script> 
 </body>
 </html>
