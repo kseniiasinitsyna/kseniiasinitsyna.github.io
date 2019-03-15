@@ -6,6 +6,7 @@ body{
     background-color: #fffefb;
     cursor: default;
     margin: 0 auto;
+	display:none;
 }
 a, button {
     -webkit-transition-duration: 0.3s;
