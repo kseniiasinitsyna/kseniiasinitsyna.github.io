@@ -816,6 +816,7 @@ p.telephone a:hover, p.mail a:hover {
 /* ---- isotope ---- */
 .grid {
   border: 1px solid #333;
+  transition: height 0.7s; 
 }
 /* clear fix */
 .grid:after {
